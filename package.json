@@ -1,0 +1,23 @@
+{
+  "name": "@coil-lang/react",
+  "version": "0.0.4",
+  "type": "module",
+  "description": "Thin react wrapper for coil",
+  "main": "dist/react.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coil-language/coil-react.git"
+  },
+  "author": "Marcelle Rusu",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/coil-language/coil-react/issues"
+  },
+  "homepage": "https://github.com/coil-language/coil-react#readme"
+}
