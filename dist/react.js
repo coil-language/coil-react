@@ -55,7 +55,7 @@ Elem.prototype[ToReactChild] = function () {
   }
 };
 Keyword.prototype[Meta] = new ObjectLiteral({
-  ["[]"]: function (children) {
+  ["[]"]: function (...children) {
     let str = this["value"];
     let [elem_name, ...classes] = str["split"](".");
     return Elem[Meta]["[]"].call(
@@ -97,7 +97,7 @@ export function component(Component) {
     return to_react_child.bind(Component(...args))();
   };
   ReactComponent[Meta] = new ObjectLiteral({
-    ["[]"]: function (children) {
+    ["[]"]: function (...children) {
       return React["createElement"](
         ReactComponent,
         null,

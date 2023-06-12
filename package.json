@@ -1,6 +1,6 @@
 {
   "name": "@coil-lang/react",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "description": "Thin react wrapper for coil",
   "main": "dist/react.js",

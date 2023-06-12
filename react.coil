@@ -33,7 +33,7 @@ impl ToReactChild for Elem = fn() {
 }
 
 impl Meta for Keyword = {
-  ["[]"]: fn (children) {
+  ["[]"]: fn (...children) {
     let str = this.value
     let [elem_name, ...classes] = str.split(".")
     return Elem[elem_name, {className: classes.join(" ")}, children]
@@ -56,7 +56,7 @@ impl Meta for Keyword = {
 export fn component(Component) {
   let ReactComponent = fn (...args) = Component(...args)::to_react_child()
   define Meta for ReactComponent = {
-    ["[]"]: fn (children) =
+    ["[]"]: fn (...children) =
       React.createElement(ReactComponent, null, ...children::map(to_react_child))
     ["{}"]: fn (attrs) {
       attrs = attrs::into({})
