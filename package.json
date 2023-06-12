@@ -1,6 +1,6 @@
 {
   "name": "@coil-lang/react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "description": "Thin react wrapper for coil",
   "main": "dist/react.js",
@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "@coil-lang/compiler": "0.0.14"
   },
   "repository": {
     "type": "git",
